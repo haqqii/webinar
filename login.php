@@ -44,46 +44,69 @@ include 'header.php';
 
 ?>
 
-<!--tes-->
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-lg-5">
-            <div class="card shadow-lg border-0 rounded-lg mt-5">
-                <div class="card-header">
-                    <h3 class="text-center font-weight-light my-4">Login</h3>
-                </div>
-                <div class="card-body">
-                    <form action="login.php<?php if (isset($_GET['redirectProfile'])) {
-                                                echo "?redirectProfile=" . $_GET['redirectProfile'];
-                                            } ?>" method="POST">
+<!DOCTYPE html>
+<html>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control py-4" id="username" name="username" placeholder="Username">
-                        </div>
+<head>
+    <title>Animated Login Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-                        <div class="form-group row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                <input type="password" class="form-control py-4" id="exampleInputPassword" placeholder="Password" onkeyup='check();'>
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="password" class="form-control py-4" id="exampleRepeatPassword" placeholder="Confirm Password" onkeyup=' check();'>
-                            </div>
-                        </div>
-                        <a href="index.php" class="btn btn-primary btn-user btn-block">
-                            Login
-                        </a>
-                    </form>
-                </div>
-
-                <div class="text-center">
-                    <div class="card-footer text-center">
-                        <a class="small" href="register.php">Create a new Account!</a>
+<body>
+    <img class="wave" src="img/wave.png">
+    <div class="container">
+        <div class="img">
+            <img src="img/hello.svg">
+        </div>
+        <div class="login-content">
+            <form action="login.php<?php if (isset($_GET['redirectProfile'])) {
+                                        echo "?redirectProfile=" . $_GET['redirectProfile'];
+                                    } ?>" method="POST">
+                <img src="img/profil.svg">
+                <h2 class="title">Login dulu bosku</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Email</h5>
+                        <input type="text" class="input" id="Email" name="Email">
                     </div>
                 </div>
-            </div>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Username</h5>
+                        <input type="text" class="input" id="username" name="username">
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Password</h5>
+                        <input type="password" class="input" id="exampleInputPassword">
+                    </div>
+                </div>
+                <a type="submit" class="btn" value="Login" href="index.php">
+                    Login
+                </a>
+                <a href="register.php">Belum punya akun? DAFTAR </a>
+            </form>
         </div>
     </div>
+    <script type="text/javascript" src="js/main.js"></script>
     <!--testaaa-->
+</body>
+
+</html>
 
 
-    <?php include 'footer.php' ?>
+
+<?php include 'footer.php' ?>

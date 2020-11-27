@@ -19,7 +19,7 @@ include 'header.php';
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <a class="navbar-brand" href="#">
-            <img src="images/peeporip.gif" alt="PEEPORIP" width="50px">
+            <img src="img/logo2.gif" alt="logo" width="100px">
         </a>
         <?php if ($_SESSION) : ?>
             <p class="navbar-nav ml-auto mr-4 mt-2 mt-lg-0"><?php echo $_SESSION['username'] ?></p>
