@@ -1,5 +1,5 @@
 Bisa di akses ya pada web nya
-untuk linknya salink link dibawah ini
+untuk linknya salin link dibawah ini
 
 http://webinar.mydiscussion.net/?i=1
 maaf masih belum sempurna
