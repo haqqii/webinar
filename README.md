@@ -6,3 +6,4 @@ maaf masih belum sempurna
 karna yang sempurna hanya milik Allah SWT :)
 
 Terima kasih yang udah mampir （⌒▽⌒)
+
